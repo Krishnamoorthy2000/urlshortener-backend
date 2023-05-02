@@ -24,7 +24,7 @@ router.post("/shorten", async (req, res) => {
   await urlPair.save();
 
   // Return the short URL to the client
-  res.send(`http://localhost:8080/${shortId}`);
+  res.send(`https://urlshortener-backend-uesn.onrender.com/${shortId}`);
 });
 
 // Route to handle short URL redirection
